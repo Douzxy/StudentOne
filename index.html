@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title Website -->
+    <title>Student One Islamic School - Student One Islamic School</title>
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ICON Student One Islamic School -->
+    <link rel="icon" href="assets/img/LogoTitle.png" type="image/png" />
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <!-- CDN FontAwesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- CDN Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- CDN Font Nunito -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-base font-normal bg-gray-100">
+    <!-- ========== TOP NAVIGATION BAR ========== -->
+    <div
+      class="px-4 text-base bg-portfolio-color md:px-8 lg:px-24"
+      id="nav-top"
+    >
+      <div class="mx-auto max-w-7xl">
+        <div
+          class="flex flex-col items-center gap-2 md:flex-row md:justify-between"
+        >
+          <!-- Left Content: Social Media Icons -->
+          <div class="flex items-center hidden space-x-4 md:flex">
+            <a
+              href="https://www.instagram.com/"
+              rel="canonical"
+              class="text-xl text-white transition-colors duration-300 hover:text-main-color-one"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://facebook.com"
+              rel="canonical"
+              class="text-xl text-white transition-colors duration-300 hover:text-main-color-one"
+            >
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a
+              href="https://id.linkedin.com/"
+              rel="canonical"
+              class="text-xl text-white transition-colors duration-300 hover:text-main-color-one"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
+          <!-- Right Content: Login, Language Selector, Register Button -->
+          <div class="items-center space-x-6 text-white md:flex">
+            <!-- Login/Register Links -->
+            <div class="flex items-center space-x-2">
+              <a
+                href="https://studentone.id/sois/authentication"
+                class="hover:underline"
+                >Login</a
+              >
+              <span class="text-paragraph-color">/</span>
+              <a
+                href="https://studentone.id/home/admission"
+                class="hover:underline"
+                >Register</a
+              >
+            </div>
+
+            <!-- Language Selector -->
+            <select
+              id="langchange"
+              class="px-2 py-1 text-white bg-transparent rounded cursor-pointer focus:outline-none focus:ring-0 focus:border-transparent"
+            >
+              <option value="en_US" class="text-black bg-white">English</option>
+              <option selected value="id_ID" class="text-black bg-white">
+                Bahasa Indonesia
+              </option>
+            </select>
+
+            <!-- Registration Button -->
+            <a
+              href="https://studentone.id/home/admission"
+              rel="canonical"
+              target="_blank"
+              class="hidden px-10 py-4 font-bold text-white transition cursor-pointer bg-main-color-one md:block"
+              >Pendaftaran
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== MAIN NAVIGATION ========== -->
+    <nav class="absolute z-10 w-full transition-all duration-300" id="navbar">
+      <div
+        class="container flex items-center justify-between px-4 py-10 mx-auto transition-all duration-300 navbarscroll"
+        id="nav-content"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold">
+            <img src="assets/img/LogoStudentOne.png" alt="Student One Logo" />
+          </a>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="hidden space-x-6 text-base font-bold text-white lg:flex">
+          <ul class="flex flex-row gap-10">
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >Event & Artikel</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >Video Galeri</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >SIMS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >Pembayaran</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-300 hover:text-main-color-one"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div
+          class="flex items-center px-5 py-1 space-x-4 border rounded bg-secondary-color lg:hidden"
+        >
+          <button id="toggleMenu" class="focus:outline-none">
+            <i class="text-2xl text-white fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div
+      id="mobileMenu"
+      class="container absolute z-50 hidden px-4 mx-auto -translate-x-1/2 shadow-lg top-40 left-1/2"
+    >
+      <div class="p-4 text-base font-bold bg-white text-paragraph-color">
+        <ul class="flex flex-col mt-2 space-y-4">
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-home text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">Home</span>
+            </a>
+          </li>
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-info-circle text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">Tentang Kami</span>
+            </a>
+          </li>
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-newspaper text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">Event & Artikel</span>
+            </a>
+          </li>
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-images text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">Galeri</span>
+            </a>
+          </li>
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-video text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">Video Galeri</span>
+            </a>
+          </li>
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-graduation-cap text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">SIMS</span>
+            </a>
+          </li>
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-credit-card text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">Pembayaran</span>
+            </a>
+          </li>
+          <li class="pb-2 border-b">
+            <a href="#" class="flex items-center gap-3 text-gray-800">
+              <i class="text-xl fas fa-phone-alt text-main-color-one"></i>
+              <span class="border-b-2 border-transparent">Kontak</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section
+      class="relative h-[750px] text-white overflow-hidden flex items-center px-4 sm:px-8 md:px-16 lg:px-20"
+    >
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-center bg-cover"
+        style="
+          background-image: url('assets/img/Baner1.png');
+          background-size: cover;
+        "
+      ></div>
+
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-tl from-orange-500/70 via-blue-700/50 to-blue-900/80 mix-blend-multiply"
+      ></div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 w-full">
+        <div class="container flex flex-row items-start">
+          <div class="w-full mb-10 text-left md:w-1/2 md:mb-0">
+            <!-- School Name -->
+            <p class="mb-3 text-lg font-semibold sm:text-xl md:text-2xl">
+              Student One Islamic School
+            </p>
+            <!-- Main Heading -->
+            <h1 class="text-5xl lg:text-7xl font-bold mb-5 leading-[58px]">
+              Selamat Datang Di Student One
+            </h1>
+            <!-- Subtitle -->
+            <p class="mb-5 text-base sm:text-lg md:text-xl">
+              Bangkitnya Generasi Cerdas, Kreatif dan Qurani.
+            </p>
+            <!-- CTA Button -->
+            <div
+              class="flex flex-col justify-center space-y-4 w-fit sm:flex-row sm:space-y-0 sm:space-x-4 md:justify-start"
+            >
+              <a
+                href="#"
+                class="px-12 py-4 font-medium text-center text-white rounded-full bg-main-color-one"
+                >Login SIMS</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FLOATING FEATURES BOX ========== -->
+    <section class="relative mb-56 z-5 -mt-14">
+      <div class="px-4 sm:px-6 lg:px-0">
+        <div
+          class="grid max-w-6xl grid-cols-1 px-0 mx-auto text-center bg-white divide-y-4 shadow-md lg:py-10 sm:grid-cols-2 lg:grid-cols-4 sm:divide-y-4 sm:divide-x-4 lg:divide-y-0 lg:divide-x-0"
+        >
+          <!-- Feature 1: Programming -->
+          <div class="px-4 py-10 group">
+            <div
+              class="text-6xl mb-4 text-blue-600 transition-transform duration-300 group-hover:scale-x-[-1]"
+            >
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h4 class="text-lg font-semibold">Pemrograman</h4>
+          </div>
+
+          <!-- Feature 2: Leadership -->
+          <div class="px-4 py-10 group">
+            <div
+              class="text-6xl mb-4 text-main-color-one transition-transform duration-300 group-hover:scale-x-[-1]"
+            >
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h4 class="text-lg font-semibold">Siap menjadi pemimpin</h4>
+          </div>
+
+          <!-- Feature 3: Modern Library -->
+          <div class="px-4 py-10 group">
+            <div
+              class="text-6xl mb-4 text-blue-600 transition-transform duration-300 group-hover:scale-x-[-1]"
+            >
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h4 class="text-lg font-semibold">Perpustakaan Buku Modern</h4>
+          </div>
+
+          <!-- Feature 4: Multi Language -->
+          <div class="px-4 py-10 group">
+            <div
+              class="text-6xl mb-4 text-green-400 transition-transform duration-300 group-hover:scale-x-[-1]"
+            >
+              <i class="fas fa-language"></i>
+            </div>
+            <h4 class="text-lg font-semibold">Multi Bahasa</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="">
+      <div
+        class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-12 lg:py-0 lg:px-6"
+      >
+        <!-- Left Side: Image -->
+        <div class="grid gap-4 mb-40 lg:col-span-6 lg:mb-0">
+          <img
+            class="w-full"
+            src="assets/img/Hero1.png"
+            alt="Student One Islamic School"
+          />
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="font-light text-gray-500 sm:text-lg lg:col-span-6">
+          <!-- Section Title -->
+          <h2
+            class="mb-5 text-[40px] md:text-5xl tracking-tight font-bold text-gray-900 leading-[58px]"
+          >
+            Student One Islamic School
+          </h2>
+
+          <!-- Description Paragraph 1 -->
+          <p
+            class="text-base font-normal text-justify mb-7 text-paragraph-color"
+          >
+            Kami mendidik siswa menjadi individu yang bertanggung jawab dalam
+            hidup, siap menghadapi tantangan dan menjadi pemimpin yang baik bagi
+            masyarakat.
+          </p>
+
+          <!-- Description Paragraph 2 -->
+          <p class="text-base font-normal text-justify text-paragraph-color">
+            Membuatnya terlihat seperti bahasa Inggris yang mudah dibaca. Banyak
+            desktop publishing berbasis Kurikulum Pendidikan Nasional dan
+            diperkaya dengan kurikulum Tahfizh Internasional ditambah filosofi
+            pendidikan terbaik di dunia yaitu Finlandia. Memberikan pola
+            pendidikan yang ramah terhadap anak dan memaksimalkan potensinya
+            sesuai dengan ciri genetik masing-masing.
+          </p>
+
+          <!-- Quote Section -->
+          <div class="flex items-center mt-6 space-x-3">
+            <div class="text-6xl text-main-color-one">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p class="text-lg font-semibold">Calon Pemimpin Di Masa Depan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PARALLAX SECTION - WHY CHOOSE US ========== -->
+    <section
+      class="relative h-[500px] overflow-hidden bg-[url(assets/img/Hero2.png)] bg-fixed bg-center bg-cover"
+    >
+      <!-- Dark Overlay -->
+      <div
+        class="absolute inset-0 flex items-center justify-center px-4 text-center bg-black/70"
+      >
+        <div class="max-w-4xl text-white">
+          <!-- Section Title -->
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 md:leading-[58px]">
+            Mengapa Harus
+            <br class="md:hidden" />
+            Memilih Student One
+          </h2>
+          <!-- Section Description -->
+          <p class="text-lg font-normal md:text-base">
+            Memiliki keyakinan yang lurus, memahami nilai-nilai luhur agama,
+            suka berinteraksi dengan <br class="hidden md:block" />
+            Al-Quran, rajin dan berempati.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CALL TO ACTION SECTION ========== -->
+    <section
+      class="flex flex-col items-center justify-between p-10 text-center text-white md:flex-row md:text-left md:p-20"
+      style="background: linear-gradient(21deg, #fd5b56 0%, #f41e7e 100%)"
+    >
+      <!-- CTA Title -->
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 md:mb-0 md:leading-[60px]">
+        Student One Islamic School
+      </h1>
+      <!-- CTA Button -->
+      <a
+        href="#pendaftaran"
+        class="px-10 py-3 text-lg font-semibold text-white transition rounded-full bg-main-color-one"
+      >
+        Pendaftaran
+      </a>
+    </section>
+
+    <!-- ========== HERO SECTION 2 - LEADERSHIP THEME ========== -->
+    <section
+      class="relative h-[500px] bg-center bg-cover flex items-center justify-center text-center"
+      style="background-image: url('assets/img/Hero3.png')"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 px-4">
+        <!-- Main Title -->
+        <h1 class="text-4xl font-bold leading-tight text-white md:text-6xl">
+          Menjadi Pemimpin Dimasa Depan
+        </h1>
+        <!-- Subtitle -->
+        <p class="mt-4 text-lg text-white md:text-xl">
+          Bergabunglah Bersama Kami
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== NEWS & ARTICLES SECTION ==================== -->
+    <section class="bg-white pt-28">
+      <div class="px-4 mx-auto text-center max-w-7xl">
+        <!-- SECTION HEADER -->
+        <div class="mb-14">
+          <h2
+            class="text-4xl md:text-5xl md:leading-[58px] font-bold text-gray-800 mb-2"
+          >
+            Berita & Artikel
+          </h2>
+          <p class="mb-10 text-base text-paragraph-color">
+            Berlangganan Berita & Artikel Dari Kami
+          </p>
+        </div>
+
+        <!-- CAROUSEL CONTAINER -->
+        <div class="relative max-w-4xl mx-auto carousel-container">
+          <!-- PREVIOUS BUTTON -->
+          <button
+            id="prevBtn"
+            class="absolute left-0 z-20 hidden px-3 py-4 text-2xl text-white transition-all duration-300 transform -translate-y-1/2 bg-gray-600 rounded-r shadow-lg opacity-0 carousel-arrow left-arrow top-1/2 hover:bg-primary-color lg:opacity-80 hover:opacity-100 lg:block"
+          >
+            &#8249;
+          </button>
+
+          <!-- CAROUSEL WRAPPER -->
+          <div class="relative overflow-hidden carousel-wrapper">
+            <div
+              id="carouselSlides"
+              class="flex transition-transform duration-500 carousel-slides will-change-transform"
+            >
+              <!-- SLIDE 1 -->
+              <div class="flex-shrink-0 w-full carousel-slide px-2">
+                <div
+                  class="relative overflow-hidden rounded-lg h-96 article-card"
+                  style="
+                    background-image: url('assets/img/berita1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                  <div
+                    class="absolute inset-0 z-10 flex flex-col justify-center p-6 text-left w-3/4"
+                  >
+                    <div
+                      class="flex items-center mb-3 space-x-4 text-sm text-gray-200"
+                    >
+                      <span class="flex items-center">
+                        <i class="fas fa-clock text-white mr-1"></i> 09 May 2025
+                      </span>
+                      <span class="flex items-center text-sm text-gray-200">
+                        <i class="fas fa-newspaper mr-1"></i>
+                        <a href="#kategori" class=""> Berita & Artikel </a>
+                      </span>
+                    </div>
+                    <a href="#artikel1" class="block">
+                      <h3
+                        class="mb-2 text-xl font-bold text-white transition-colors hover:text-blue-200"
+                      >
+                        Meningkatkan Literasi Digital di Kalangan Pelajar
+                        Indonesia
+                      </h3>
+                      <p class="text-white text-sm">
+                        Pemerintah dan lembaga pendidikan mulai mendorong
+                        program literasi digital sebagai bagian penting dalam
+                        kurikulum. Langkah ini bertujuan agar pelajar Indonesia
+                        mampu memilah informasi yang valid dan aman dari konten
+                        negatif di era digital yang semakin kompleks.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="flex-shrink-0 w-full carousel-slide px-2">
+                <div
+                  class="relative overflow-hidden rounded-lg h-96 article-card"
+                  style="
+                    background-image: url('assets/img/Hero3.png');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                  <div
+                    class="absolute inset-0 z-10 flex flex-col justify-center p-6 text-left w-3/4"
+                  >
+                    <div
+                      class="flex items-center mb-3 space-x-4 text-sm text-gray-200"
+                    >
+                      <span class="flex items-center">
+                        <i class="fas fa-clock text-white mr-1"></i> 07 May 2025
+                      </span>
+                      <span class="flex items-center text-sm text-gray-200">
+                        <i class="fas fa-newspaper mr-1"></i>
+                        <a href="#kategori" class=""> Berita & Artikel </a>
+                      </span>
+                    </div>
+                    <a href="#artikel2" class="block">
+                      <h3
+                        class="mb-2 text-xl font-bold text-white transition-colors hover:text-blue-200"
+                      >
+                        Revolusi Teknologi Ramah Lingkungan Hadir di Indonesia
+                      </h3>
+                      <p class="text-white text-sm">
+                        Start-up lokal menghadirkan inovasi panel surya portabel
+                        dan ramah biaya untuk masyarakat pedesaan. Teknologi ini
+                        diharapkan mampu mengurangi ketergantungan terhadap
+                        listrik konvensional serta menekan emisi karbon secara
+                        signifikan.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 3 -->
+              <div class="flex-shrink-0 w-full carousel-slide px-2">
+                <div
+                  class="relative overflow-hidden rounded-lg h-96 article-card"
+                  style="
+                    background-image: url('assets/img/berita2.png');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                  <div
+                    class="absolute inset-0 z-10 flex flex-col justify-center p-6 text-left w-3/4"
+                  >
+                    <div
+                      class="flex items-center mb-3 space-x-4 text-sm text-gray-200"
+                    >
+                      <span class="flex items-center">
+                        <i class="fas fa-clock text-white mr-1"></i> 05 May 2025
+                      </span>
+                      <span class="flex items-center text-sm text-gray-200">
+                        <i class="fas fa-newspaper mr-1"></i>
+                        <a href="#kategori" class=""> Berita & Artikel </a>
+                      </span>
+                    </div>
+                    <a href="#artikel3" class="block">
+                      <h3
+                        class="mb-2 text-xl font-bold text-white transition-colors hover:text-blue-200"
+                      >
+                        Budaya Lokal Jadi Sorotan di Festival Nusantara 2025
+                      </h3>
+                      <p class="text-white text-sm">
+                        Ribuan pengunjung hadir dalam Festival Nusantara yang
+                        menampilkan kekayaan budaya lokal dari Sabang sampai
+                        Merauke. Kegiatan ini juga menjadi ajang bagi generasi
+                        muda untuk mengenal lebih dalam tentang warisan leluhur
+                        bangsa.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 4 -->
+              <div class="flex-shrink-0 w-full carousel-slide px-2">
+                <div
+                  class="relative overflow-hidden rounded-lg h-96 article-card"
+                  style="
+                    background-image: url('assets/img/Hero1.png');
+                    background-size: cover;
+                    background-position: center;
+                  "
+                >
+                  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                  <div
+                    class="absolute inset-0 z-10 flex flex-col justify-center p-6 text-left w-3/4"
+                  >
+                    <div
+                      class="flex items-center mb-3 space-x-4 text-sm text-gray-200"
+                    >
+                      <span class="flex items-center">
+                        <i class="fas fa-clock text-white mr-1"></i> 03 May 2025
+                      </span>
+                      <span class="flex items-center text-sm text-gray-200">
+                        <i class="fas fa-newspaper mr-1"></i>
+                        <a href="#kategori" class=""> Berita & Artikel </a>
+                      </span>
+                    </div>
+                    <a href="#artikel4" class="block">
+                      <h3
+                        class="mb-2 text-xl font-bold text-white transition-colors hover:text-blue-200"
+                      >
+                        Generasi Muda dan Pentingnya Kesadaran Kesehatan Mental
+                      </h3>
+                      <p class="text-white text-sm">
+                        Kesadaran akan pentingnya kesehatan mental di kalangan
+                        anak muda semakin meningkat. Banyak sekolah dan
+                        komunitas kini menghadirkan sesi edukatif dan konseling
+                        gratis untuk mendukung siswa dalam menghadapi tekanan
+                        akademik dan sosial.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEXT BUTTON -->
+          <button
+            id="nextBtn"
+            class="absolute right-0 z-20 hidden px-3 py-4 text-2xl text-white transition-all duration-300 transform -translate-y-1/2 bg-gray-600 rounded-l shadow-lg opacity-0 carousel-arrow right-arrow top-1/2 hover:bg-primary-color lg:opacity-80 hover:opacity-100 lg:block"
+          >
+            &#8250;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PARTNERS SECTION ==================== -->
+    <section class="py-12 text-center bg-white">
+      <!-- SECTION HEADER -->
+      <h2 class="mb-8 text-2xl font-semibold text-gray-900">
+        Perusahaan Nasional dan Multinasional Yang Telah Bekerjasama Dengan Kami
+      </h2>
+
+      <!-- LOGO GRID -->
+      <div
+        class="grid items-center max-w-6xl grid-cols-2 gap-6 px-4 mx-auto md:grid-cols-4"
+      >
+        <!-- LOGO 1 -->
+        <div class="flex items-center justify-center w-full h-40">
+          <img
+            src="assets/img/bsi.jpg"
+            alt="Logo BSI"
+            class="object-contain max-w-full max-h-full transition duration-300 cursor-pointer grayscale hover:grayscale-0"
+          />
+        </div>
+        <!-- LOGO 2 -->
+        <div class="flex items-center justify-center w-full h-40">
+          <img
+            src="assets/img/erlangga.jpg"
+            alt="Logo BSI"
+            class="object-contain max-w-full max-h-full transition duration-300 cursor-pointer grayscale hover:grayscale-0"
+          />
+        </div>
+        <!-- LOGO 3 -->
+        <div class="flex items-center justify-center w-full h-40">
+          <img
+            src="assets/img/btti.jpg"
+            alt="Logo BSI"
+            class="object-contain max-w-full max-h-full transition duration-300 cursor-pointer grayscale hover:grayscale-0"
+          />
+        </div>
+        <!-- LOGO 4 -->
+        <div class="flex items-center justify-center w-full h-40">
+          <img
+            src="assets/img/qurancordoba.jpg"
+            alt="Logo BSI"
+            class="object-contain max-w-full max-h-full transition duration-300 cursor-pointer grayscale hover:grayscale-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="text-white bg-heading-color">
+      <!-- FOOTER COLUMNS CONTAINER -->
+      <div class="grid gap-8 py-20 px-4 mx-auto max-w-7xl md:grid-cols-4">
+        <!-- COLUMN 1: LOGO & MOTTO -->
+        <div>
+          <img
+            src="assets/img/LogoStudentOne.png"
+            alt="Logo"
+            class="h-12 mb-4"
+          />
+          <p class="mt-4 text-sm text-paragraph-color">
+            Bangkitnya Generasi Cerdas, Kreatif dan Qurani
+          </p>
+        </div>
+
+        <!-- COLUMN 2: LATEST NEWS -->
+        <div>
+          <h4 class="mb-4 text-lg font-bold text-white">Berita Terbaru</h4>
+          <!-- NEWS ITEM 1 -->
+          <div class="flex gap-4 mb-4 text-base">
+            <img
+              src="assets/img/berita1.jpg"
+              alt="Berita 1"
+              class="object-cover w-16 h-16"
+            />
+            <!-- NEWS DETAILS -->
+            <div class="text-paragraph-color">
+              <p class="text-base font-semibold">RUMAH KAMI YANG BARU</p>
+              <p class="mt-1 text-sm">
+                <i class="mr-1 far fa-calendar-alt"></i>13 May 2024
+              </p>
+            </div>
+          </div>
+          <!-- NEWS ITEM 2 -->
+          <div class="flex gap-4 mb-4 text-base">
+            <img
+              src="assets/img/berita2.png"
+              alt="Berita 1"
+              class="object-cover w-16 h-16"
+            />
+            <!-- NEWS DETAILS -->
+            <div class="text-paragraph-color">
+              <p class="text-base font-semibold">
+                SISWA STUDENT ONE MELAWAT KE SINGAPURA DAN MALAYSIA (SO-IECS
+                series, Bagian 1)
+              </p>
+              <p class="mt-1 text-sm">
+                <i class="mr-1 far fa-calendar-alt"></i>13 May 2024
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMN 3: QUICK LINKS -->
+        <div>
+          <h4 class="mb-4 text-lg font-bold text-white">Tautan Langsung</h4>
+          <!-- NAVIGATION LINKS LIST -->
+          <ul class="space-y-2 text-base font-normal">
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">Tentang Kami</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">Event & Artikel</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">Galeri</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">Video Galeri</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">SIMS</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">Pembayaran</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i
+                  class="mr-2 text-main-color-one fas fa-angle-right text-base"
+                ></i>
+                <span class="text-paragraph-color">Kontak</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 4: CONTACT INFO -->
+        <div>
+          <h4 class="mb-4 text-lg font-bold text-white">Info Kontak</h4>
+          <!-- CONTACT DETAILS -->
+          <ul class="space-y-4 text-base">
+            <li class="flex items-start">
+              <i class="mr-3 text-main-color-one fas fa-home text-base"></i>
+              <span class="text-paragraph-color"
+                >Jl. Permata No.64 RT.3/RW.3, Curug Gn. Sindur Bogor Jawa Barat
+                16340.</span
+              >
+            </li>
+            <li class="flex items-start">
+              <i class="mr-3 text-main-color-one fas fa-phone text-base"></i>
+              <span class="text-paragraph-color">021-75682819</span>
+            </li>
+            <li class="flex items-start">
+              <i class="mr-3 text-main-color-one fas fa-envelope text-base"></i>
+              <span class="text-paragraph-color">info@studentone.id</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+      <div class="bg-[#2d316a] text-center py-4 text-gray-300 text-lg">
+        Student One Islamic School
+      </div>
+
+      <!-- FLOATING ACTION BUTTONS -->
+      <div class="fixed z-50 flex items-center space-x-3 bottom-4 right-4">
+        <!-- SCROLL TO TOP BUTTON -->
+        <button
+          id="scrollTopBtn"
+          class="flex items-center justify-center w-12 h-12 text-xl text-white transition-all duration-500 transform translate-y-10 rounded-full shadow-md opacity-0 pointer-events-none bg-main-color-one"
+        >
+          <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <!-- WHATSAPP BUTTON -->
+        <a
+          href="https://wa.me/6281234567890"
+          target="_blank"
+          class="flex items-center justify-center w-12 h-12 text-xl text-white bg-green-500 rounded-full shadow-md hover:bg-green-600"
+        >
+          <i class="text-3xl fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- CUSTOM SCRIPT -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

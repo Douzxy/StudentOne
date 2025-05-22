@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /StudentOne/
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ /StudentOne/ [R=301,L]
+
+# Optional: set default directory index
+DirectoryIndex index.html
